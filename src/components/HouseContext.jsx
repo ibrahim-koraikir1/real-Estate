@@ -1,12 +1,11 @@
 import React, { createContext, useState, useEffect } from 'react';
 
 // import data
-
+import { housesData } from '../data';
 
 // create context
 export const HouseContext = createContext();
 
-const housesData = []
 // provider
 const HouseContextProvider = ({ children }) => {
   const [houses, setHouses] = useState(housesData);
